@@ -16,7 +16,7 @@ All data in this manuscript complied from numerous public data sources including
 [the Database of Interacting Proteins](https://dip.doe-mbi.ucla.edu/dip/Main.cgi)<br>
 [the Human Reference Protein Interactome Mapping Project](http://www.interactome-atlas.org/)<br>
 [the Gene Ontology]<br>
-[Gene Ontology Plus](ttp://geneontology.org/)<br>
+[Gene Ontology Plus](http://geneontology.org/)<br>
 [the Broad Connectivity Map](https://clue.io/cmap)<br>
 [the Pharmacogenomics Knowledgebase](https://www.pharmgkb.org/)<br>
 [Uberon](http://uberon.github.io/)<br>
@@ -26,10 +26,8 @@ All data in this manuscript complied from numerous public data sources including
 ## Repository layout
 - [data/](data/) — raw input TSVs.  
 - [msi/](msi/) — graph component classes and loader.  
-- [embedding_for_BioMNEDR/](embedding_for_BioMNEDR/). 
 - [feature/](feature/) — precomputed feature files used in the paper (embedding vectors).  
 - [model/](model/) — saved trained models.  
-- [main.py](main.py) — training pipeline and utilities.  
 - [case_study_demo.py](case_study_demo.py) — demo to run inference with a saved model (uses [`case_study_demo.load_features`](case_study_demo.py) and [`case_study_demo.main`](case_study_demo.py)).  
 - [requirements.txt](requirements.txt) — Python dependencies.
 
@@ -37,9 +35,6 @@ All data in this manuscript complied from numerous public data sources including
 1. Create Python environment and install deps:
    ```sh
    pip install -r requirements.txt
-2. Train model (using precomputed features):
-   ```sh
-   python main.py
-3. Run case study:
+2. Run case study:
    ```sh
    python case_study_demo.py
